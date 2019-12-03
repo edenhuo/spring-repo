@@ -1,0 +1,8 @@
+#配置默认环境spring:  profiles:     active: pro ---spring:  profiles: dev #开发环境
+server:
+  port: 80
+  servlet:    context-path: /  
+#将数据写入配置文件
+jdbc:
+  username: root用户名
+  password: root密码    #环境分割符---   spring:  profiles: pro #开发环境    server:  port: 8090  servlet:    context-path: /jt    #将数据写入配置文件jdbc:  username: root用户名  password: root密码
